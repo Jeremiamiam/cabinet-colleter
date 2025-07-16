@@ -2,6 +2,27 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ImagePlaceholder from '../components/common/ImagePlaceholder';
 
+const caseStudiesData = [
+  {
+    id: 'cas-de-marc-coureur',
+    title: 'Le cas de Marc, coureur : soulager une fasciite plantaire',
+    summary: 'Découvrez comment une analyse de course et des semelles thermoformées ont permis à Marc de reprendre la compétition sans douleur.',
+    category: 'Posturologie du Sportif',
+  },
+  {
+    id: 'cas-de-sophie-rhizarthrose',
+    title: 'Le cas de Sophie : une orthèse sur-mesure pour sa rhizarthrose',
+    summary: "Après des années de douleurs au pouce, une orthèse de repos a changé le quotidien de Sophie. Voici comment.",
+    category: 'Orthèse de la Main',
+  },
+  {
+    id: 'cas-de-leo-scoliose',
+    title: "Le cas de Léo, 14 ans : corriger une attitude scoliotique",
+    summary: "Le suivi postural et le port de semelles adaptées ont permis de corriger la posture de Léo durant sa croissance.",
+    category: 'Posturologie de l\'Enfant',
+  }
+];
+
 const HomePage = () => {
   return (
     <div>
@@ -132,39 +153,21 @@ const HomePage = () => {
             <p className="text-lg mt-2">Du cas complexe à l'amélioration du quotidien, découvrez des exemples concrets de notre travail.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Cas d'étude 1 - Placeholder */}
-            <div className="card bg-base-100 shadow-xl">
-              <figure><ImagePlaceholder /></figure>
-              <div className="card-body">
-                <h2 className="card-title">Soulager une douleur chronique au genou</h2>
-                <p>Comment des semelles adaptées ont permis à un coureur de reprendre la compétition sans douleur.</p>
-                <div className="card-actions justify-end">
-                  <Link to="/etudes-de-cas/1" className="btn btn-secondary">Lire la suite</Link>
+            {caseStudiesData.map((study) => (
+              <div key={study.id} className="card bg-base-100 shadow-xl">
+                <figure className="h-48">
+                  <ImagePlaceholder />
+                </figure>
+                <div className="card-body">
+                  <div className="badge badge-secondary">{study.category}</div>
+                  <h2 className="card-title mt-2">{study.title}</h2>
+                  <p>{study.summary}</p>
+                  <div className="card-actions justify-end mt-4">
+                    <Link to={`/etudes-de-cas/${study.id}`} className="btn btn-primary">Lire l'étude de cas</Link>
+                  </div>
                 </div>
               </div>
-            </div>
-            {/* Cas d'étude 2 - Placeholder */}
-            <div className="card bg-base-100 shadow-xl">
-              <figure><ImagePlaceholder /></figure>
-              <div className="card-body">
-                <h2 className="card-title">Récupération post-opératoire d'un canal carpien</h2>
-                <p>L'orthèse sur-mesure qui a changé la vie d'une musicienne professionnelle.</p>
-                <div className="card-actions justify-end">
-                  <Link to="/etudes-de-cas/2" className="btn btn-secondary">Lire la suite</Link>
-                </div>
-              </div>
-            </div>
-            {/* Cas d'étude 3 - Placeholder */}
-            <div className="card bg-base-100 shadow-xl">
-              <figure><ImagePlaceholder /></figure>
-              <div className="card-body">
-                <h2 className="card-title">Corriger la posture d'un adolescent</h2>
-                <p>Un suivi sur 18 mois pour éviter l'aggravation d'une scoliose et redonner confiance.</p>
-                <div className="card-actions justify-end">
-                  <Link to="/etudes-de-cas/3" className="btn btn-secondary">Lire la suite</Link>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
           <div className="text-center mt-12">
             <Link to="/etudes-de-cas" className="btn btn-primary">Voir toutes nos études de cas</Link>
