@@ -7,7 +7,6 @@ import OrthesesMainPage from './pages/OrthesesMainPage';
 import CabinetPage from './pages/CabinetPage';
 import ConsultationPage from './pages/ConsultationPage';
 import ContactPage from './pages/ContactPage';
-import ThemePage from './pages/ThemePage';
 import ProPage from './pages/ProPage';
 import FAQPage from './pages/FAQPage';
 import CaseStudiesPage from './pages/CaseStudiesPage';
@@ -25,7 +24,6 @@ function App() {
           <Route path="/cabinet" element={<CabinetPage />} />
           <Route path="/consultation" element={<ConsultationPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/theme" element={<ThemePage />} />
           <Route path="/pro" element={<ProPage />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/etudes-de-cas" element={<CaseStudiesPage />} />
