@@ -36,8 +36,8 @@ const AVAILABLE_THEMES = [
   'sunset'
 ];
 
-// Thème par défaut : light pour le template
-const DEFAULT_THEME = 'light';
+// Thème par défaut : lofi
+const DEFAULT_THEME = 'lofi';
 
 // Création du contexte
 const ThemeContext = createContext({
