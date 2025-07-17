@@ -5,6 +5,7 @@ const Navbar = () => {
   const menuItems = (
     <>
       <li><Link to="/posturologie-semelles">Posturologie</Link></li>
+      <li><Link to="/podologie">Podologie</Link></li>
       <li><Link to="/ortheses-main">Orthèses Main</Link></li>
       <li><Link to="/cabinet">Le Cabinet</Link></li>
       <li><Link to="/consultation">Consultation</Link></li>

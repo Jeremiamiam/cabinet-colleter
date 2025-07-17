@@ -11,6 +11,7 @@ import ProPage from './pages/ProPage';
 import FAQPage from './pages/FAQPage';
 import CaseStudiesPage from './pages/CaseStudiesPage';
 import CaseStudyPage from './pages/CaseStudyPage';
+import PodologiePage from './pages/PodologiePage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/posturologie-semelles" element={<PosturologiePage />} />
+          <Route path="/podologie" element={<PodologiePage />} />
           <Route path="/ortheses-main" element={<OrthesesMainPage />} />
           <Route path="/cabinet" element={<CabinetPage />} />
           <Route path="/consultation" element={<ConsultationPage />} />
