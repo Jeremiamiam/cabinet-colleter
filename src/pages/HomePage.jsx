@@ -201,7 +201,7 @@ const HomePage = () => {
               <div className="card-body lg:w-2/3">
                 <h2 className="card-title">Louis Chaudet</h2>
                 <p className="font-bold text-secondary">L'Innovation & la Main</p>
-                <p>Spécialiste des orthèses de la main, Louis apporte les techniques les plus récentes pour un traitement optimal.</p>
+                <p>Spécialiste des orthèses de la main, Louis pratique également la posturologie et la podologie. Il apporte les techniques les plus récentes pour un traitement optimal.</p>
                 <div className="card-actions justify-end mt-4">
                   <Link to="/cabinet" className="btn btn-ghost">En savoir plus</Link>
                 </div>

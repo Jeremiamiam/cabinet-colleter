@@ -12,6 +12,11 @@ import FAQPage from './pages/FAQPage';
 import CaseStudiesPage from './pages/CaseStudiesPage';
 import CaseStudyPage from './pages/CaseStudyPage';
 import PodologiePage from './pages/PodologiePage';
+import RhizarthrosePage from './pages/orthoses/RhizarthrosePage';
+import CanalCarpienPage from './pages/orthoses/CanalCarpienPage';
+import TendinitesPage from './pages/orthoses/TendinitesPage';
+import PostOperatoirePage from './pages/orthoses/PostOperatoirePage';
+import FracturesPage from './pages/orthoses/FracturesPage';
 
 function App() {
   return (
@@ -29,7 +34,12 @@ function App() {
           <Route path="/pro" element={<ProPage />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/etudes-de-cas" element={<CaseStudiesPage />} />
-          <Route path="/etudes-de-cas/:studyId" element={<CaseStudyPage />} />
+                                <Route path="/etudes-de-cas/:studyId" element={<CaseStudyPage />} />
+                      <Route path="/ortheses-main/rhizarthrose" element={<RhizarthrosePage />} />
+                      <Route path="/ortheses-main/canal-carpien" element={<CanalCarpienPage />} />
+                      <Route path="/ortheses-main/tendinites" element={<TendinitesPage />} />
+                      <Route path="/ortheses-main/post-operatoire" element={<PostOperatoirePage />} />
+                      <Route path="/ortheses-main/fractures" element={<FracturesPage />} />
         </Routes>
       </main>
       <Footer />

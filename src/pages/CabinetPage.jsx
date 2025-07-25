@@ -87,6 +87,7 @@ const CabinetPage = () => (
                     <div className="card-body items-center text-center">
                         <h3 className="card-title">Julie Colléter</h3>
                         <p className="font-bold text-primary">L'Expérience & la Posture</p>
+                        <p className="text-sm text-base-content/70 mt-2">Spécialiste en posturologie et semelles orthopédiques sur-mesure</p>
                         <div className="card-actions">
                         <Link to="/posturologie-semelles" className="btn btn-primary">
                             Voir son expertise
@@ -99,6 +100,7 @@ const CabinetPage = () => (
                     <div className="card-body items-center text-center">
                         <h3 className="card-title">Louis Chaudet</h3>
                         <p className="font-bold text-secondary">L'Innovation & la Main</p>
+                        <p className="text-sm text-base-content/70 mt-2">Spécialiste des orthèses de main, pratique également la posturologie</p>
                         <div className="card-actions">
                         <Link to="/ortheses-main" className="btn btn-secondary">
                            Voir son expertise
